@@ -1,6 +1,6 @@
 module.exports = function getZerosCount(number, base) {
   // your implementation
-  if ( base = 10 || base = 9 ) {
+  if ( base == 10 || base == 9 ) {
     base = 5;
   }
   var res = 0;
