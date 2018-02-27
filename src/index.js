@@ -1,7 +1,9 @@
 module.exports = function getZerosCount(number, base) {
   // your implementation
-  if ( base == 10 || base == 9 ) {
-    base = 5;
+  for (var i = 2; i < base; i++) {
+	  if (base%i == 0) {
+	  	base = 5;
+      }
   }
   var res = 0;
   while(number > 0) {
