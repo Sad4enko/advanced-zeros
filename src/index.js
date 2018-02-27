@@ -2,7 +2,7 @@ module.exports = function getZerosCount(number, base) {
   // your implementation
   for (var i = 2; i < base; i++) {
 	  if (base%i == 0) {
-	  	base = 5;
+	  	base /= i;
       }
   }
   var res = 0;
